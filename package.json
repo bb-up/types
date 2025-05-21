@@ -1,12 +1,12 @@
 {
   "private": true,
-  "name": "@bb-up/core-types",
+  "name": "@bb-up/types",
   "type": "module",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bb-up/core-types.git"
+    "url": "https://github.com/bb-up/types.git"
   },
   "main": "index.js",
   "scripts": {

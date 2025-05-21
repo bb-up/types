@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "@bb-up/core-types",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bb-up/core-types.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "publish": "rimraf dist && esbuild src/index.ts --bundle --outfile=dist/index.js --sourcemap --minify && tsc --declaration src/index.ts --emitDeclarationOnly --outDir ./dist && package-json-minifier && cd dist && npm publish"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
